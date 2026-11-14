@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MorionesWorks — discover Morion-inspired handmade products from Marinduque.">
+  <title>MorionesWorks | Morion-Inspired Finds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">CELEBRATING MARINDUQUE CRAFTSMANSHIP · SHOP LOCAL, SUPPORT LOCAL</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="MorionesWorks home">
+      <img src="assets/morionesworks-logo.jpg" alt="MorionesWorks Moriones Online Web Shop logo">
+      <span><b>MORIONES</b><small>WORKS · MARINDUQUE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="cart-button" id="cartOpen">Cart <span id="cartCount">0</span></button>
+      <button class="admin-link" id="adminOpen">Admin</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE SPIRIT OF MARINDUQUE</p>
+        <h1>Tradition, <em>crafted</em><br>to be treasured.</h1>
+        <p class="hero-text">Discover Morion-inspired pieces made with the creativity, skill, and cultural pride of local artisans.</p>
+        <a class="button button-gold" href="#shop">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span class="seal">✦</span><span>Locally made<br><b>in Marinduque</b></span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="hero-stamp">HANDMADE<br><b>WITH HERITAGE</b><br>✦ MARINDUQUE ✦</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✧</span><b>Local craftsmanship</b><small>Made by local makers</small></div>
+      <div><span>◇</span><b>Culture in every piece</b><small>Inspired by Moriones heritage</small></div>
+      <div><span>⌂</span><b>Shop with ease</b><small>Browse and order online</small></div>
+    </section>
+
+    <section class="shop-section section-pad" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find something <em>meaningful.</em></h2></div>
+        <p>Every piece carries a story inspired by the artistry and identity of Marinduque.</p>
+      </div>
+      <div class="shop-tools">
+        <div class="category-tabs" id="categoryTabs">
+          <button class="active" data-category="All">All products</button>
+          <button data-category="Masks">Masks</button>
+          <button data-category="Wearables">Wearables</button>
+          <button data-category="Accessories">Accessories</button>
+          <button data-category="Souvenirs">Souvenirs</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search products..."></label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="demo-note">Sample products and prices are for website demonstration. Replace them with the participating artisans' actual catalog.</p>
+    </section>
+
+    <section class="heritage" id="story">
+      <div class="heritage-photo"><div class="photo-caption">A LIVING TRADITION <span>—</span> MARINDUQUE</div></div>
+      <div class="heritage-copy">
+        <p class="eyebrow">ROOTED IN CULTURE</p>
+        <h2>More than a product.<br><em>A piece of our story.</em></h2>
+        <p>The Moriones Festival is one of Marinduque's most recognized cultural traditions. Its iconic Roman-soldier masks inspire local creativity, craftsmanship, and products treasured by residents, visitors, and collectors.</p>
+        <p>MorionesWorks brings these creations into one online space while helping organize the work behind every order.</p>
+        <a href="#shop" class="text-link">Discover local creations <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="maker-section section-pad">
+      <p class="eyebrow">MADE BY LOCAL HANDS</p>
+      <div class="section-heading"><h2>Supporting the people<br>behind the <em>craft.</em></h2><p>We aim to connect local artisans and small business owners with customers who value handmade products and Marinduque's cultural heritage.</p></div>
+      <div class="maker-values">
+        <div><b>01</b><h3>Discover</h3><p>Explore Morion-inspired products and learn about the makers behind them.</p></div>
+        <div><b>02</b><h3>Support</h3><p>Every purchase helps promote local craftsmanship and small businesses.</p></div>
+        <div><b>03</b><h3>Preserve</h3><p>Celebrate a cultural tradition through products inspired by its distinctive artistry.</p></div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">KEEP IN TOUCH</p><h2>Stories and creations<br><em worth sharing.</em></h2>
+      <p>Have a question or want to know more about our products?</p>
+      <a href="#contact" class="button button-dark">Get in touch</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand"><img src="assets/morionesworks-logo.jpg" alt=""><div><b>MORIONESWORKS</b><small>Morion-inspired products · Marinduque</small></div></div>
+    <div><b>Explore</b><a href="#shop">Shop products</a><a href="#story">Our story</a></div>
+    <div><b>Contact</b><a href="mailto:hello@morionesworks.ph">hello@morionesworks.ph</a><span>Marinduque, Philippines</span></div>
+    <div class="copyright">© 2026 MorionesWorks. A project promoting local craftsmanship.</div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping cart</h2></div><button class="close-btn" data-close>×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-bottom"><div class="total-line"><span>Subtotal</span><b id="cartTotal">₱0.00</b></div><button class="button button-dark full" id="checkoutBtn">Continue to checkout</button><small>Demo checkout — no real payment will be collected.</small></div>
+  </aside>
+
+  <section class="modal" id="checkoutModal">
+    <button class="close-btn modal-close" data-close>×</button>
+    <p class="eyebrow">ORDER DETAILS</p><h2>Complete your order</h2>
+    <form id="checkoutForm">
+      <div class="form-row"><label>Full name<input required name="name" placeholder="Your full name"></label><label>Email address<input required type="email" name="email" placeholder="you@example.com"></label></div>
+      <label>Delivery address<textarea required name="address" rows="3" placeholder="House number, street, barangay, municipality, province"></textarea></label>
+      <label>Contact number<input required name="phone" placeholder="09XX XXX XXXX"></label>
+      <div class="checkout-summary" id="checkoutSummary"></div>
+      <button class="button button-dark full" type="submit">Place demo order</button>
+    </form>
+  </section>
+
+  <section class="modal admin-modal" id="adminModal">
+    <button class="close-btn modal-close" data-close>×</button>
+    <p class="eyebrow">BUSINESS MANAGEMENT</p><h2>Admin overview</h2>
+    <p class="admin-warning">Frontend demonstration only. This dashboard uses sample data and is not protected by real administrator authentication.</p>
+    <div class="admin-stats"><div><small>Products</small><b id="adminProductCount">0</b></div><div><small>Items in sample stock</small><b id="adminStock">0</b></div><div><small>Orders in this session</small><b id="adminOrders">0</b></div></div>
+    <div class="admin-tabs"><button class="active" data-tab="products">Products & inventory</button><button data-tab="orders">Orders</button><button data-tab="records">Business modules</button></div>
+    <div id="adminPanel"></div>
+  </section>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
